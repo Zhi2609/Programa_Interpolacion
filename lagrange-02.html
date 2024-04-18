@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Interpolación de Lagrange (2do Orden)</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="./test.html" data-text="Regresar"> <----- </a></li>
+    </ul>
+    <div class="box">
+      <h2>Interpolación de Lagrange (2do Orden)</h2>
+      <form>
+        <div class="label">
+          <input type="number" id="lagrange-f0" step="any" />
+          <label for="lagrange-f0">f(X0):</label>
+        </div>
+        <div class="label">
+          <input type="number" id="lagrange-f1" step="any" />
+          <label for="lagrange-f1">f(X1):</label>
+        </div>
+        <div class="label">
+          <input type="number" id="lagrange-f2" step="any" />
+          <label for="lagrange-f2">f(X2):</label>
+        </div>
+        <div class="label">
+          <input type="number" id="lagrange-x0" />
+          <label for="lagrange-x0">X0:</label>
+        </div>
+        <div class="label">
+          <input type="number" id="lagrange-x1" />
+          <label for="lagrange-x1">X1:</label>
+        </div>
+        <div class="label">
+          <input type="number" id="lagrange-x2" />
+          <label for="lagrange-x2">X2:</label>
+        </div>
+        <div class="label">
+          <input type="number" id="lagrange-x-new" step="any" />
+          <label for="lagrange-x-new">Valor a interpolar (X):</label>
+        </div>
+        <div class="label">
+          <output
+            type="number"
+            step="any"
+            id="lagrange-second-order-result"
+          ></output>
+          <label for="lagrange-second-order-result"></label>
+        </div>
+        <a onclick="calculateLagrangeSecondOrderInterpolation(); return false;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Calcular
+        </a>
+      </form>
+    </div>
+  </body>
+</html>
