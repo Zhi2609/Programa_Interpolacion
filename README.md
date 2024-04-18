@@ -11,4 +11,4 @@ Actualmente tiene una interfaz basada en un antiguo proyecto y puede resolver 4 
 
 # 👉👈 Informacion Adicional
 
-Este codigo fue creado por [Cesar Emilio Garcia Gutierrez][puto el que lo robe] y publicado el dia [17 de Abril de 2024][Dia Exacto] a las [21:34][Mas o menos].
+Este codigo fue creado por ***Cesar Emilio Garcia Gutierrez*** y publicado el dia ***17 de Abril de 2024*** a las ***21:34***.
