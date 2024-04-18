@@ -47,11 +47,11 @@ function quadraticInterpolation(x, x0, f0, x1, f1, x2, f2) {
 function calculateLagrangeFirstOrderInterpolation() {
   event.preventDefault(); // Evita que el formulario se envíe y recargue la página
 
-  const f0 = parseFloat(document.getElementById("lagrange-f0").value);// Obtiene los valores ingresados en el HTML
-  const f1 = parseFloat(document.getElementById("lagrange-f1").value);// Obtiene los valores ingresados en el HTML
-  const x0 = parseFloat(document.getElementById("lagrange-x0").value);// Obtiene los valores ingresados en el HTML
-  const x1 = parseFloat(document.getElementById("lagrange-x1").value);// Obtiene los valores ingresados en el HTML
-  const xNew = parseFloat(document.getElementById("lagrange-x-new").value);// Obtiene los valores ingresados en el HTML
+  const f0 = parseFloat(document.getElementById("lagrange-f0").value); // Obtiene los valores ingresados en el HTML
+  const f1 = parseFloat(document.getElementById("lagrange-f1").value); // Obtiene los valores ingresados en el HTML
+  const x0 = parseFloat(document.getElementById("lagrange-x0").value); // Obtiene los valores ingresados en el HTML
+  const x1 = parseFloat(document.getElementById("lagrange-x1").value); // Obtiene los valores ingresados en el HTML
+  const xNew = parseFloat(document.getElementById("lagrange-x-new").value); // Obtiene los valores ingresados en el HTML
 
   const fNew = lagrangeFirstOrderInterpolation([x0, x1], [f0, f1], xNew);
   document.getElementById(
@@ -77,13 +77,13 @@ function lagrangeFirstOrderInterpolation(x, f, xNew) {
 function calculateLagrangeSecondOrderInterpolation() {
   event.preventDefault(); // Evita que el formulario se envíe y recargue la página
 
-  const f0 = parseFloat(document.getElementById("lagrange-f0").value);// Obtiene los valores ingresados en el HTML
-  const f1 = parseFloat(document.getElementById("lagrange-f1").value);// Obtiene los valores ingresados en el HTML
-  const f2 = parseFloat(document.getElementById("lagrange-f2").value);// Obtiene los valores ingresados en el HTML
-  const x0 = parseFloat(document.getElementById("lagrange-x0").value);// Obtiene los valores ingresados en el HTML
-  const x1 = parseFloat(document.getElementById("lagrange-x1").value);// Obtiene los valores ingresados en el HTML
-  const x2 = parseFloat(document.getElementById("lagrange-x2").value);// Obtiene los valores ingresados en el HTML
-  const xNew = parseFloat(document.getElementById("lagrange-x-new").value);// Obtiene los valores ingresados en el HTML
+  const f0 = parseFloat(document.getElementById("lagrange-f0").value); // Obtiene los valores ingresados en el HTML
+  const f1 = parseFloat(document.getElementById("lagrange-f1").value); // Obtiene los valores ingresados en el HTML
+  const f2 = parseFloat(document.getElementById("lagrange-f2").value); // Obtiene los valores ingresados en el HTML
+  const x0 = parseFloat(document.getElementById("lagrange-x0").value); // Obtiene los valores ingresados en el HTML
+  const x1 = parseFloat(document.getElementById("lagrange-x1").value); // Obtiene los valores ingresados en el HTML
+  const x2 = parseFloat(document.getElementById("lagrange-x2").value); // Obtiene los valores ingresados en el HTML
+  const xNew = parseFloat(document.getElementById("lagrange-x-new").value); // Obtiene los valores ingresados en el HTML
 
   const fNew = lagrangeSecondOrderInterpolation(
     [x0, x1, x2],
