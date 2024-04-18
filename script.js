@@ -1,3 +1,4 @@
+/* Codigo creado por Cesar Emilio Garcia Gutierrez y publicado el dia 17 de Abril de 2024 a las 21:34 */
 /* Codigo para calcular interpolacion lineal */
 function calculateLinearInterpolation() {
   event.preventDefault(); // Evita que el formulario se envíe y recargue la página
