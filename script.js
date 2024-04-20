@@ -1,5 +1,5 @@
 /* Codigo creado por Cesar Emilio Garcia Gutierrez y publicado el dia 17 de Abril de 2024 a las 21:34 */
-/* Codigo para calcular interpolacion lineal */
+/* Codigo para calcular interpolacion lineal | 1er Orden */
 function calculateLinearInterpolation() {
   event.preventDefault(); // Evita que el formulario se envíe y recargue la página
 
@@ -19,7 +19,7 @@ function linearInterpolation(x, x0, f0, x1, f1) {
   return f0 + (x - x0) * ((f1 - f0) / (x1 - x0));
 }
 
-/* Codigo para calcular interpolacion cuadratica */
+/* Codigo para calcular interpolacion cuadratica | 2da Orden */
 function calculateQuadraticInterpolation() {
   event.preventDefault(); // Evita que el formulario se envíe y recargue la página
 
@@ -61,21 +61,12 @@ function calculateLagrangeFirstOrderInterpolation() {
 }
 
 function lagrangeFirstOrderInterpolation(x, f, xNew) {
-  let fNew = 0;
-  for (let i = 0; i < x.length; i++) {
-    let l = 1;
-    for (let j = 0; j < x.length; j++) {
-      if (j !== i) {
-        l *= (xNew - x[j]) / (x[i] - x[j]);
-      }
-    }
-    fNew += f[i] * l;
-  }
-  return fNew;
+  const a = (((xNew - x1) / (x0 - x1)) (f0) + ((xNew - x0) / (x1 - x0)) (f1));
+  return a;
 }
 
 /* Codigo para calcular interpolacion de Lagrange 2da Orden */
-function calculateLagrangeSecondOrderInterpolation() {
+/* function calculateLagrangeSecondOrderInterpolation() {
   event.preventDefault(); // Evita que el formulario se envíe y recargue la página
 
   const f0 = parseFloat(document.getElementById("lagrange-f0").value); // Obtiene los valores ingresados en el HTML
@@ -97,15 +88,5 @@ function calculateLagrangeSecondOrderInterpolation() {
 }
 
 function lagrangeSecondOrderInterpolation(x, f, xNew) {
-  let fNew = 0;
-  for (let i = 0; i < x.length; i++) {
-    let l = 1;
-    for (let j = 0; j < x.length; j++) {
-      if (j !== i) {
-        l *= (xNew - x[j]) / (x[i] - x[j]);
-      }
-    }
-    fNew += f[i] * l;
-  }
-  return fNew;
-}
+  // Error reparable
+} */
