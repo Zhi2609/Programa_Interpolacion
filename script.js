@@ -60,9 +60,8 @@ function calculateLagrangeFirstOrderInterpolation() {
   ).textContent = `El valor interpolado es: ${fNew}`;
 }
 
-function lagrangeFirstOrderInterpolation(x, f, xNew) {
-  const a = (((xNew - x1) / (x0 - x1)) (f0) + ((xNew - x0) / (x1 - x0)) (f1));
-  return a;
+function lagrangeFirstOrderInterpolation(x0, x1, f0, f1, xNew) {
+  return (((xNew - x1) / (x0 - x1)) (f0) + ((xNew - x0) / (x1 - x0)) (f1));
 }
 
 /* Codigo para calcular interpolacion de Lagrange 2da Orden */
