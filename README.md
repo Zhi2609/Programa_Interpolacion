@@ -11,8 +11,8 @@ Actualmente tiene una interfaz basada en un antiguo proyecto y puede resolver 4 
 
 # 👉👈 Informacion Adicional
 
-Este codigo fue creado por ***Cesar Emilio Garcia Gutierrez*** y publicado el dia ***17 de Abril de 2024*** a las ***21:34***.
+Este codigo fue creado por ***Cesar Emilio Garcia Gutierrez*** y ***Manuel Alcaraz Baltazar***; publicado el dia ***17 de Abril de 2024*** a las ***21:34***.
 
-Esta web es para un trabajo de mi materia ***Metodos Numericos*** y la realize de manera ***individual***.
+Esta web es para un trabajo de nuestra materia ***Metodos Numericos*** y la realizamos juntos para facilitar el proceso.
 
-No me importa si usas esta web, solo si eres de mi grupo no seas malo y dame credito.
+No me importa si usas esta web, solo si eres de nuestro grupo no seas malo y danos credito.
