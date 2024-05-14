@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/icon" href="./marin 2.jpg">
     <script src="./script.js"></script>
     <title>Interpolación Cuadratica</title>
   </head>
@@ -12,20 +13,16 @@
     <ul>
       <li><a href="./test.html" data-text="Regresar"><-----</a></li>
     </ul>
-    <div class="box">
+    <div class="box" id="data">
       <h2>Interpolación Cuadratica</h2>
       <form>
         <div class="label">
-          <input type="number" id="quadratic-f0" step="any" />
-          <label for="quadratic-f0">f(X0):</label>
+          <input type="number" id="trueValue" step="any" />
+          <label for="trueValue">Valor Verdadero:</label>
         </div>
         <div class="label">
-          <input type="number" id="quadratic-f1" step="any" />
-          <label for="quadratic-f1">f(X1):</label>
-        </div>
-        <div class="label">
-          <input type="number" id="quadratic-f2" step="any" />
-          <label for="quadratic-f2">f(X2):</label>
+          <input type="number" id="quadratic-x-new" step="any" />
+          <label for="quadratic-x-new">Valor a interpolar (X):</label>
         </div>
         <div class="label">
           <input type="number" id="quadratic-x0" />
@@ -40,12 +37,16 @@
           <label for="quadratic-x2">X2:</label>
         </div>
         <div class="label">
-          <input type="number" id="quadratic-x-new" step="any" />
-          <label for="quadratic-x-new">Valor a interpolar (X):</label>
+          <input type="number" id="quadratic-f0" step="any" />
+          <label for="quadratic-f0">f(X0):</label>
         </div>
         <div class="label">
-          <output type="number" step="any" id="quadratic-result"></output>
-          <label for="quadratic-result"></label>
+          <input type="number" id="quadratic-f1" step="any" />
+          <label for="quadratic-f1">f(X1):</label>
+        </div>
+        <div class="label">
+          <input type="number" id="quadratic-f2" step="any" />
+          <label for="quadratic-f2">f(X2):</label>
         </div>
         <a onclick="calculateQuadraticInterpolation(); return false;">
           <span></span>
@@ -54,6 +55,25 @@
           <span></span>
           Calcular
         </a>
+      </form>
+    </div>
+    <div class="box" id="result">
+      <h2>Resultados</h2>
+      <form>
+        <div class="label">
+          <output type="number" step="any" id="quadratic-result"></output>
+          <label for="quadratic-result"></label>
+        </div>
+        <br /><br /><br />
+        <div class="label">
+          <output type="number" step="any" id="true-error"></output>
+          <label for="true-error"></label>
+        </div>
+        <br /><br /><br />
+        <div class="label">
+          <output type="number" step="any" id="porcentage-error"></output>
+          <label for="porcentage-error"></label>
+        </div>
       </form>
     </div>
   </body>

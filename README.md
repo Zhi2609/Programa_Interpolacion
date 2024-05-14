@@ -1,4 +1,6 @@
 # 🌐 Programa de Interpolacion
+## 💬 Ultima Actualizacion: 14/05/2024 a las 01:32
+## 💬 Estado: Finalizado
 
 Este codigo corresponde a una pagina web donde puedes solucionar problemas de interpolacion
 
