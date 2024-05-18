@@ -140,5 +140,5 @@ function calculateTrueError(tValue, fNew) {
 
 function calculatePercentError(tValue, fNew) {
   const errorVerdadero = calculateTrueError(tValue, fNew);
-  return (errorVerdadero / tValue) * 100;
+  return Math.abs(errorVerdadero / tValue) * 100;
 }
