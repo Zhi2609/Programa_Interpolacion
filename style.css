@@ -104,7 +104,7 @@ body {
   transition: 0.5s;
 }
 
-.box .label input:focus ~ label,
+/* .box .label input:focus ~ label,
 .box .label input:valid ~ label {
   top: -20px;
   left: 0;
@@ -118,7 +118,7 @@ body {
   left: 0;
   color: #03e9f4;
   font-size: 12px;
-}
+} */
 
 .box form a {
   position: relative;

@@ -23,7 +23,7 @@ function calculateLinearInterpolation() {
   const errorPorcentual = calculatePercentError(tValue, fNew);
   document.getElementById(
     "porcentage-error"
-  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(2)}%`;
+  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(6)}%`;
 }
 
 function linearInterpolation(x, x0, f0, x1, f1) {
@@ -57,7 +57,7 @@ function calculateQuadraticInterpolation() {
   const errorPorcentual = calculatePercentError(tValue, fNew);
   document.getElementById(
     "porcentage-error"
-  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(2)}%`;
+  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(6)}%`;
 }
 
 function quadraticInterpolation(x, x0, f0, x1, f1, x2, f2) {
@@ -91,7 +91,7 @@ function calculateLagrangeFirstOrderInterpolation() {
   const errorPorcentual = calculatePercentError(tValue, fNew);
   document.getElementById(
     "porcentage-error"
-  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(2)}%`;
+  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(6)}%`;
 }
 
 function lagrangeFirstOrderInterpolation(x0, x1, f0, f1, xNew) {
@@ -124,7 +124,7 @@ function calculateLagrangeSecondOrderInterpolation() {
   const errorPorcentual = calculatePercentError(tValue, fNew);
   document.getElementById(
     "porcentage-error"
-  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(2)}%`;
+  ).textContent = `El error porcentual es: ${errorPorcentual.toFixed(6)}%`;
 }
 
 function lagrangeSecondOrderInterpolation(x0, x1, x2, f0, f1, f2, xNew) {
